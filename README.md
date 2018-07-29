@@ -1,12 +1,12 @@
 # GITLAB_v2
 Gitlab in EPAM on Java and boarding techs
-#Source Control
+## Source Control
 Git 
 
-#Build tools 
+## Build tools 
 Maven, Gradle
   
-#Concurrency	
+## Concurrency	
 Threads
 Executors
 Synchronizers
@@ -14,17 +14,17 @@ Thread-safe Collections
 Parallel Streams
 CompletableFuture
  
-#Java 8
+## Java 8
 Lambda, Functional Interface & Optional 
 Streams API 
 Collectors & Spliterators
 
-#Spring
+## Spring
 IOC, Annotations, SpringBoot
 Configuration
 SpringMVC
 
-#AWS 
+## AWS 
 Console
 Balancer, Deployment Apps
 Docker, Lambda
