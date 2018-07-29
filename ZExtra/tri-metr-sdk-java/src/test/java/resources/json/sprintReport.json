@@ -1,0 +1,1991 @@
+{
+  "contents": {
+    "completedIssues": [{
+      "id": 10481,
+      "key": "LEGAP-32",
+      "hidden": false,
+      "typeName": "Story",
+      "typeId": "7",
+      "summary": "Store Dissemination Files",
+      "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+      "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+      "priorityName": "Must Have",
+      "done": true,
+      "assignee": "gayathri",
+      "assigneeName": "Gayathri Parvathaneni",
+      "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?avatarId=10106",
+      "hasCustomUserAvatar": true,
+      "color": "#66cc33",
+      "epic": "LEGAP-9",
+      "epicField": {
+        "id": "customfield_10004",
+        "label": "Epic",
+        "editable": false,
+        "renderer": "epiclink",
+        "epicKey": "LEGAP-9",
+        "epicColor": "ghx-label-2",
+        "text": "Data Ingest",
+        "canRemoveEpic": true
+      },
+      "currentEstimateStatistic": {
+        "statFieldId": "customfield_10008",
+        "statFieldValue": {
+
+        }
+      },
+      "estimateStatistic": {
+        "statFieldId": "customfield_10008",
+        "statFieldValue": {
+
+        }
+      },
+      "statusId": "6",
+      "statusName": "Closed",
+      "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+      "status": {
+        "id": "6",
+        "name": "Closed",
+        "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+        "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "statusCategory": {
+          "id": "3",
+          "key": "done",
+          "colorName": "green"
+        }
+      },
+      "fixVersions": [10017,
+        10036],
+      "projectId": 10102,
+      "linkedPagesCount": 0
+    },
+      {
+        "id": 10487,
+        "key": "LEGAP-38",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Reprocess File",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "c164322",
+        "assigneeName": "Michael Schue",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=c164322&avatarId=10347",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-9",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-9",
+          "epicColor": "ghx-label-2",
+          "text": "Data Ingest",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10504,
+        "key": "LEGAP-54",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Store & Load XBRL",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/minor.svg",
+        "priorityName": "Could Have",
+        "done": true,
+        "assignee": "christina.sickelco",
+        "assigneeName": "Christina Sickelco",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=christina.sickelco&avatarId=10324",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-48",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-48",
+          "epicColor": "ghx-label-4",
+          "text": "Load",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10575,
+        "key": "LEGAP-81",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Create WL Cite ",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-79",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-79",
+          "epicColor": "ghx-label-8",
+          "text": "Retrieve Identifiers",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10578,
+        "key": "LEGAP-84",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Create Serial Number",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-79",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-79",
+          "epicColor": "ghx-label-8",
+          "text": "Retrieve Identifiers",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10581,
+        "key": "LEGAP-87",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Create / Find Doc Family UUID",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-79",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-79",
+          "epicColor": "ghx-label-8",
+          "text": "Retrieve Identifiers",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10584,
+        "key": "LEGAP-90",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Create UUID's (docs)",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-79",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-79",
+          "epicColor": "ghx-label-8",
+          "text": "Retrieve Identifiers",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10638,
+        "key": "LEGAP-144",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Reach out to WCA about new use of Delta Feed",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "epic": "LEGAP-142",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-142",
+          "epicColor": "ghx-label-2",
+          "text": "Ingest Delta Feed",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10704,
+        "key": "LEGAP-204",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Versioning Dissemination Files",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "rich.champlin",
+        "assigneeName": "Rich Champlin",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=rich.champlin&avatarId=10331",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-9",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-9",
+          "epicColor": "ghx-label-2",
+          "text": "Data Ingest",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11478,
+        "key": "LEGAP-299",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Social Security Number Redaction",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "christina.sickelco",
+        "assigneeName": "Christina Sickelco",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=christina.sickelco&avatarId=10324",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "epic": "LEGAP-50",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-50",
+          "epicColor": "ghx-label-6",
+          "text": "Rich XML / Conversion",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11500,
+        "key": "LEGAP-312",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Implement Ingest Workflow",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "andrew.petrosie",
+        "assigneeName": "Andrew Petrosie",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=andrew.petrosie&avatarId=10313",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-9",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-9",
+          "epicColor": "ghx-label-2",
+          "text": "Data Ingest",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11502,
+        "key": "LEGAP-314",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Dev Parser isn't populating the DB for CORRECTION_FLAG",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10703&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#cc0000",
+        "epic": "LEGAP-41",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-41",
+          "epicColor": "ghx-label-2",
+          "text": "Parse / Transform",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10028],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11574,
+        "key": "LEGAP-338",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Filewatcher multithreading",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "c164322",
+        "assigneeName": "Michael Schue",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=c164322&avatarId=10347",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-9",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-9",
+          "epicColor": "ghx-label-2",
+          "text": "Data Ingest",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11584,
+        "key": "LEGAP-343",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Document Sequence field validation ",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10703&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/minor.svg",
+        "priorityName": "Minor",
+        "done": true,
+        "assignee": "christina.sickelco",
+        "assigneeName": "Christina Sickelco",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=christina.sickelco&avatarId=10324",
+        "hasCustomUserAvatar": true,
+        "color": "#cc0000",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11600,
+        "key": "LEGAP-349",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Ingest - Kick off Quick Load + EOD Workflow",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "c164322",
+        "assigneeName": "Michael Schue",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=c164322&avatarId=10347",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11601,
+        "key": "LEGAP-350",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Large Document Analysis: Non-LE Gap",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "rich.champlin",
+        "assigneeName": "Rich Champlin",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=rich.champlin&avatarId=10331",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11603,
+        "key": "LEGAP-351",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Investigate tracking multiple OPF workflows for one dissem file",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "andrew.petrosie",
+        "assigneeName": "Andrew Petrosie",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=andrew.petrosie&avatarId=10313",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11605,
+        "key": "LEGAP-352",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Ingest process isn't populating the <NO-INITIAL-PERIOD-ACTIVITY>, <NO-QUARTERLY-ACTIVITY>, <NO-ANNUAL-ACTIVITY> flags properly",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10703&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "christina.sickelco",
+        "assigneeName": "Christina Sickelco",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=christina.sickelco&avatarId=10324",
+        "hasCustomUserAvatar": true,
+        "color": "#cc0000",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11617,
+        "key": "LEGAP-355",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "CTQED No output files created for 0000950123-13-005319.dissem",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10703&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "sminhaaj",
+        "assigneeName": "Saladin Minhaaj",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=sminhaaj&avatarId=10333",
+        "hasCustomUserAvatar": true,
+        "color": "#cc0000",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11687,
+        "key": "LEGAP-367",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Update process correction process flag",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10703&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/major.svg",
+        "priorityName": "Major",
+        "done": true,
+        "assignee": "christina.sickelco",
+        "assigneeName": "Christina Sickelco",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=christina.sickelco&avatarId=10324",
+        "hasCustomUserAvatar": true,
+        "color": "#cc0000",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11688,
+        "key": "LEGAP-368",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Add Create Directory step to ParseAndLoad and EOD Workflows",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "c163259",
+        "assigneeName": "Ramakrishna Reddy Singireddy",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=c163259&avatarId=10340",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11810,
+        "key": "LEGAP-384",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Ingest doesn't support PC/Paper/PR files",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10703&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "sminhaaj",
+        "assigneeName": "Saladin Minhaaj",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=sminhaaj&avatarId=10333",
+        "hasCustomUserAvatar": true,
+        "color": "#cc0000",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10044],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      }],
+    "issuesNotCompletedInCurrentSprint": [{
+      "id": 10482,
+      "key": "LEGAP-33",
+      "hidden": false,
+      "typeName": "Story",
+      "typeId": "7",
+      "summary": "Archive / Compress Dissemination Files",
+      "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+      "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/minor.svg",
+      "priorityName": "Could Have",
+      "done": true,
+      "assignee": "gayathri",
+      "assigneeName": "Gayathri Parvathaneni",
+      "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?avatarId=10106",
+      "hasCustomUserAvatar": true,
+      "color": "#66cc33",
+      "epic": "LEGAP-9",
+      "epicField": {
+        "id": "customfield_10004",
+        "label": "Epic",
+        "editable": false,
+        "renderer": "epiclink",
+        "epicKey": "LEGAP-9",
+        "epicColor": "ghx-label-2",
+        "text": "Data Ingest",
+        "canRemoveEpic": true
+      },
+      "currentEstimateStatistic": {
+        "statFieldId": "customfield_10008",
+        "statFieldValue": {
+
+        }
+      },
+      "estimateStatistic": {
+        "statFieldId": "customfield_10008",
+        "statFieldValue": {
+
+        }
+      },
+      "statusId": "1",
+      "statusName": "Open",
+      "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+      "status": {
+        "id": "1",
+        "name": "Open",
+        "description": "The issue is open and ready for the assignee to start work on it.",
+        "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+        "statusCategory": {
+          "id": "2",
+          "key": "new",
+          "colorName": "blue-gray"
+        }
+      },
+      "fixVersions": [10017,
+        10036],
+      "projectId": 10102,
+      "linkedPagesCount": 0
+    },
+      {
+        "id": 10483,
+        "key": "LEGAP-34",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "End-of-Day File",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-9",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-9",
+          "epicColor": "ghx-label-2",
+          "text": "Data Ingest",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [10017,
+          10028],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10503,
+        "key": "LEGAP-53",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Handle Updates",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "christina.sickelco",
+        "assigneeName": "Christina Sickelco",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=christina.sickelco&avatarId=10324",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-48",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-48",
+          "epicColor": "ghx-label-4",
+          "text": "Load",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [10017,
+          10025],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11503,
+        "key": "LEGAP-315",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "CTQED Set-up continuous integration",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "brian.keenan",
+        "assigneeName": "Brian Keenan",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=brian.keenan&avatarId=10306",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [10018],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11684,
+        "key": "LEGAP-364",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Incorporate SSN redaction into workflows",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "christina.sickelco",
+        "assigneeName": "Christina Sickelco",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=christina.sickelco&avatarId=10324",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-41",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-41",
+          "epicColor": "ghx-label-2",
+          "text": "Parse / Transform",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [10017,
+          10036],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      }],
+    "puntedIssues": [{
+      "id": 10410,
+      "key": "LEGAP-6",
+      "hidden": false,
+      "typeName": "Story",
+      "typeId": "7",
+      "summary": "Receive Content from NTT",
+      "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+      "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+      "priorityName": "Must Have",
+      "done": true,
+      "assignee": "andrew.petrosie",
+      "assigneeName": "Andrew Petrosie",
+      "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=andrew.petrosie&avatarId=10313",
+      "hasCustomUserAvatar": true,
+      "color": "#66cc33",
+      "epic": "LEGAP-9",
+      "epicField": {
+        "id": "customfield_10004",
+        "label": "Epic",
+        "editable": false,
+        "renderer": "epiclink",
+        "epicKey": "LEGAP-9",
+        "epicColor": "ghx-label-2",
+        "text": "Data Ingest",
+        "canRemoveEpic": true
+      },
+      "currentEstimateStatistic": {
+        "statFieldId": "customfield_10008",
+        "statFieldValue": {
+
+        }
+      },
+      "estimateStatistic": {
+        "statFieldId": "customfield_10008",
+        "statFieldValue": {
+
+        }
+      },
+      "statusId": "1",
+      "statusName": "Open",
+      "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+      "status": {
+        "id": "1",
+        "name": "Open",
+        "description": "The issue is open and ready for the assignee to start work on it.",
+        "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+        "statusCategory": {
+          "id": "2",
+          "key": "new",
+          "colorName": "blue-gray"
+        }
+      },
+      "fixVersions": [10018,
+        10125],
+      "projectId": 10102,
+      "linkedPagesCount": 0
+    },
+      {
+        "id": 10465,
+        "key": "LEGAP-16",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Environment Configuration & Setup: Dev",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "andrew.petrosie",
+        "assigneeName": "Andrew Petrosie",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=andrew.petrosie&avatarId=10313",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-1",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-1",
+          "epicColor": "ghx-label-5",
+          "text": "Infrastructure",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "4",
+        "statusName": "Reopened",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/reopened.png",
+        "status": {
+          "id": "4",
+          "name": "Reopened",
+          "description": "This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/reopened.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [10018,
+          10125],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10639,
+        "key": "LEGAP-145",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Ingest Data",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "victor.johnson",
+        "assigneeName": "Victor Johnson",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=victor.johnson&avatarId=10343",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "epic": "LEGAP-142",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-142",
+          "epicColor": "ghx-label-2",
+          "text": "Ingest Delta Feed",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [10018,
+          10133],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 10692,
+        "key": "LEGAP-197",
+        "hidden": false,
+        "typeName": "Story",
+        "typeId": "7",
+        "summary": "Create Gold Standard Files",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10715&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "rich.champlin",
+        "assigneeName": "Rich Champlin",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=rich.champlin&avatarId=10331",
+        "hasCustomUserAvatar": true,
+        "color": "#66cc33",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "1",
+        "statusName": "Open",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+        "status": {
+          "id": "1",
+          "name": "Open",
+          "description": "The issue is open and ready for the assignee to start work on it.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/open.png",
+          "statusCategory": {
+            "id": "2",
+            "key": "new",
+            "colorName": "blue-gray"
+          }
+        },
+        "fixVersions": [10018,
+          10125],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11477,
+        "key": "LEGAP-298",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Can S&P markup be done in HTML filings?",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "rich.champlin",
+        "assigneeName": "Rich Champlin",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=rich.champlin&avatarId=10331",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "epic": "LEGAP-50",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-50",
+          "epicColor": "ghx-label-6",
+          "text": "Rich XML / Conversion",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10043],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11479,
+        "key": "LEGAP-300",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Company Map - Company Markup",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "rich.champlin",
+        "assigneeName": "Rich Champlin",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=rich.champlin&avatarId=10331",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "epic": "LEGAP-50",
+        "epicField": {
+          "id": "customfield_10004",
+          "label": "Epic",
+          "editable": false,
+          "renderer": "epiclink",
+          "epicKey": "LEGAP-50",
+          "epicColor": "ghx-label-6",
+          "text": "Rich XML / Conversion",
+          "canRemoveEpic": true
+        },
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11492,
+        "key": "LEGAP-310",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Estimate: Add SEC Comment Letters to LE Gap Pathway",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/major.svg",
+        "priorityName": "Should Have",
+        "done": true,
+        "assignee": "richrem",
+        "assigneeName": "Rich Meyer",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=richrem&avatarId=10303",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11493,
+        "key": "LEGAP-311",
+        "hidden": false,
+        "typeName": "Spike",
+        "typeId": "9",
+        "summary": "Estimate: Section Search Hierarchies",
+        "typeUrl": "http://jira.ald.int.westgroup.com/images/icons/issuetypes/exclamation.png",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "richrem",
+        "assigneeName": "Rich Meyer",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=richrem&avatarId=10303",
+        "hasCustomUserAvatar": true,
+        "color": "#990099",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "3",
+        "statusName": "In Progress",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+        "status": {
+          "id": "3",
+          "name": "In Progress",
+          "description": "This issue is being actively worked on at the moment by the assignee.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/inprogress.png",
+          "statusCategory": {
+            "id": "4",
+            "key": "indeterminate",
+            "colorName": "yellow"
+          }
+        },
+        "fixVersions": [10017],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      },
+      {
+        "id": 11511,
+        "key": "LEGAP-323",
+        "hidden": false,
+        "typeName": "Bug",
+        "typeId": "1",
+        "summary": "Dev Parser isn't populating the <NO-INITIAL-PERIOD-ACTIVITY>, <NO-QUARTERLY-ACTIVITY>, <NO-ANNUAL-ACTIVITY> flags properly",
+        "typeUrl": "http://jira.ald.int.westgroup.com/secure/viewavatar?size=xsmall&avatarId=10703&avatarType=issuetype",
+        "priorityUrl": "http://jira.ald.int.westgroup.com/images/icons/priorities/critical.svg",
+        "priorityName": "Must Have",
+        "done": true,
+        "assignee": "sminhaaj",
+        "assigneeName": "Saladin Minhaaj",
+        "avatarUrl": "http://jira.ald.int.westgroup.com/secure/useravatar?ownerId=sminhaaj&avatarId=10333",
+        "hasCustomUserAvatar": true,
+        "color": "#cc0000",
+        "currentEstimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "estimateStatistic": {
+          "statFieldId": "customfield_10008",
+          "statFieldValue": {
+
+          }
+        },
+        "statusId": "6",
+        "statusName": "Closed",
+        "statusUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+        "status": {
+          "id": "6",
+          "name": "Closed",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "http://jira.ald.int.westgroup.com/images/icons/statuses/closed.png",
+          "statusCategory": {
+            "id": "3",
+            "key": "done",
+            "colorName": "green"
+          }
+        },
+        "fixVersions": [10017,
+          10028],
+        "projectId": 10102,
+        "linkedPagesCount": 0
+      }],
+    "issuesCompletedInAnotherSprint": [],
+    "completedIssuesInitialEstimateSum": {
+      "text": "null"
+    },
+    "completedIssuesEstimateSum": {
+      "text": "null"
+    },
+    "issuesNotCompletedInitialEstimateSum": {
+      "text": "null"
+    },
+    "issuesNotCompletedEstimateSum": {
+      "text": "null"
+    },
+    "allIssuesEstimateSum": {
+      "text": "null"
+    },
+    "puntedIssuesInitialEstimateSum": {
+      "text": "null"
+    },
+    "puntedIssuesEstimateSum": {
+      "text": "null"
+    },
+    "issuesCompletedInAnotherSprintInitialEstimateSum": {
+      "text": "null"
+    },
+    "issuesCompletedInAnotherSprintEstimateSum": {
+      "text": "null"
+    },
+    "issueKeysAddedDuringSprint": {
+      "LEGAP-367": true,
+      "LEGAP-368": true,
+      "LEGAP-204": true,
+      "LEGAP-314": true,
+      "LEGAP-315": true,
+      "LEGAP-352": true,
+      "LEGAP-144": true,
+      "LEGAP-364": true,
+      "LEGAP-53": true,
+      "LEGAP-145": true,
+      "LEGAP-343": true,
+      "LEGAP-32": true,
+      "LEGAP-54": true,
+      "LEGAP-355": true,
+      "LEGAP-338": true,
+      "LEGAP-349": true,
+      "LEGAP-33": true,
+      "LEGAP-34": true,
+      "LEGAP-350": true,
+      "LEGAP-351": true,
+      "LEGAP-384": true
+    }
+  },
+  "sprint": {
+    "id": 27,
+    "sequence": 27,
+    "name": "20.4",
+    "state": "CLOSED",
+    "linkedPagesCount": 0,
+    "startDate": "31/Jul/13 9:30 AM",
+    "endDate": "27/Aug/13 7:30 PM",
+    "completeDate": "28/Aug/13 8:05 AM",
+    "canUpdateSprint": false,
+    "remoteLinks": [],
+    "daysRemaining": 0
+  },
+  "supportsPages": false
+}
