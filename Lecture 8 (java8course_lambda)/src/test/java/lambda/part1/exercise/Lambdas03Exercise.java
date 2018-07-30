@@ -51,23 +51,4 @@ public class Lambdas03Exercise {
 
         assertEquals(prod.prod("a", 2), "aa");
     }
-
-    private final String delimeter = "-";
-
-    private String stringSumWithDelimeter(String s, int i) {
-        final StringJoiner sj = new StringJoiner(delimeter);
-        for (int j = 0; j < i; j++) {
-            sj.add(s);
-        }
-        return sj.toString();
-    }
-
-    @Test
-    public void strSum2() {
-        final GenericProduct<String> prod = null; // use stringSumWithDelimeter;
-
-        assertEquals(prod.prod("a", 3), "a-a-a");
-    }
-
-
 }
