@@ -1,1 +1,2 @@
 New file.txt
+Feature: Add Line 2
