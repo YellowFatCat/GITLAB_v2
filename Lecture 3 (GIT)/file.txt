@@ -7,3 +7,4 @@ Feature: Added line to merge
 Featute: Ammend
 Add line: 10
 Add line: 12
+Add line: 14
