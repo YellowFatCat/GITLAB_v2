@@ -61,7 +61,7 @@ public class CustomController {
         int foundMatches = 0;
 
         // TODO:
-        // Encode message content
+        // Decode message content
         // Get Message content and Parse into Lines with deliminator : "\n" ???
         // Find matches in every line and count them
 
