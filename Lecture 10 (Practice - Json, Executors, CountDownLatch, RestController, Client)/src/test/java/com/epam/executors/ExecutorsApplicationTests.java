@@ -1,6 +1,6 @@
 package com.epam.executors;
 
-import com.epam.executors.model.Figure;
+import com.epam.executors.model.Message;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,62 +11,61 @@ import org.springframework.web.client.RestTemplate;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.*;
-import java.util.stream.IntStream;
 
 
 /**
+ * #### This is a Client Prototype
+ * <p>
  * Prerequisites:
- * - Download shakespire.json from https://www.elastic.co/guide/en/kibana/current/tutorial-load-dataset.html
- * - zip it and put into server into shakespear.json.zip
+ * - See at https://www.elastic.co/guide/en/kibana/current/tutorial-load-dataset.html (it is is resources an zipped_)
  * Task:
- *  - Add Controller to provide service to get shakespear.json.zip
- *  - Add a task to the Client to download shakespear.json.zip from Server
- *  - Add a task to unzip shakespear.json.zip
- *  - Add service to Server to accept BASE64 files to decode and search for word occurence
- *  - Add a task to encode json in BASE64 format and send to the server
- *  - Server should accept it, decode and return occurences
- *  - When All Tasks are completed then Client should go down
+ * - Add Controller to provide service for shakespear.json.zip processing
+ * - Add Job 1
+ * -- Request with GET to server to download unzipped shakespear.json.zip from Server line by line in multiple threads
+ * -- Collect lines and concatenate to receive json
+ * - Add Job 2
+ * -- Add a task to encode json in BASE64 format and send to the server (put encoded content to {@link com.epam.executors.model.Message} as a content)
+ * -- Add matching search expression to find into {@link com.epam.executors.model.Message}
+ * -- Server should accept it, decode and return occurences
+ * - Add Job 3
+ * -- When All Tasks are completed then Client should go down and report it in Console found lines number (integer)
  */
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ExecutorsApplicationTests {
 
+    private static final String MATCH_EXPR = "Hello";
+
     @Test
-    public void contextLoads() throws URISyntaxException, InterruptedException {
+    public void findMatchingLinesOccurences() throws URISyntaxException, InterruptedException {
         RestTemplate restTemplate = new RestTemplate();
         URI uri = new URI("http://localhost:8080/app/custom");
 
-        String name = "Test msg";
-        int size = 10;
-
 
         HttpHeaders headers = new HttpHeaders();
-        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-
-        ExecutorService executorService = Executors.newCachedThreadPool();
+//        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
+//        ExecutorService executorService = Executors.newCachedThreadPool();
 
         List<Future> requests = new ArrayList();
+        // sendRequestLine();
 
-
-
-
-        executorService.shutdown();
+        // Go Down
     }
 
-    private Figure sendRequest(RestTemplate restTemplate, URI uri, HttpEntity httpEntity, int i) {
-        ResponseEntity<Figure> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, Figure.class);
-        Figure respFigure = response.getBody();
-        System.out.println("Response : " + respFigure + ", code = " + response.getStatusCode());
-        return respFigure;
+    private String sendRequestLine(RestTemplate restTemplate, URI uri, HttpEntity httpEntity, int line) {
+//        ResponseEntity<Message> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, Message.class);
+        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.GET, httpEntity, String.class);
+        final String lineStr = response.getBody();
+        return lineStr;
     }
 
-    private Figure generateFigure(String name, int size) {
-        Figure figure = new Figure(name, size);
-        return figure;
+    private Integer sendRequestMatchesOccur(RestTemplate restTemplate, URI uri, HttpEntity httpEntity, int line) {
+        ResponseEntity<Integer> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, Integer.class);
+//        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, String.class);
+        final Integer occur = response.getBody();
+        return occur;
     }
-
 }
