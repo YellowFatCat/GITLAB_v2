@@ -1,1 +1,2 @@
 created file
+Added Line 6 to master
