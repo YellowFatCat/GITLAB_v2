@@ -5,3 +5,5 @@ Add line 5 in feaure
 Feature: Add rebase line
 Feature: Added line to merge
 Featute: Ammend
+Add line: 10
+Add line: 12
