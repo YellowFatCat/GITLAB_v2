@@ -1,1 +1,4 @@
 New file.txt
+Feature: Add Line 2
+Feature: Add Line 3
+Master: Add new Line 1
