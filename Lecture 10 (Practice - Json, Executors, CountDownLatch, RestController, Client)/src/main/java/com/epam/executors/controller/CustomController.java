@@ -4,44 +4,57 @@ import com.epam.executors.model.Message;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.apache.commons.io.IOUtils;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.PostConstruct;
+import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.Base64;
+import java.util.Objects;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipFile;
 
 @RestController
 @RequestMapping(value = "/app")
 public class CustomController {
 
-    private static String fileContent; // not static?
-    private static String[] lines;
+    private String fileContent;
+    private String[] lines;
 
-    // TODO:
-    // Get stream, unzip the file
-    // Thread.currentThread().getContextClassLoader().getResourceAsStream("<path to shakespeare.json.zip_>");
+    @PostConstruct
+    public void init() throws URISyntaxException, IOException {
 
-//    static { // not static???
-//        final InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream("<path to shakespeare.json.zip_>");
-//        try {
-//            // TODO: use java.util.zip.ZipFile
-//            // Wrap it with ZipFile. Search on the internet example
-//
-//            fileContent = IOUtils.toString(is); // CharSet??? UTF-16 or UTF-8
-//            lines = fileContent.split("\n"); //?? what is delimiter
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
+        URL url = Objects.requireNonNull(Thread.currentThread().getContextClassLoader().getResource("shakespeare_6.0.json.zip_"));
 
-    @RequestMapping(value = "/getLine", method = RequestMethod.GET,
-            produces = MediaType.TEXT_PLAIN_VALUE)
-    public String readLine( @RequestParam(value = "line") final Integer line) {
-        String lineStr = "Italy";
+        try (ZipFile zipFile = new ZipFile(new File(url.toURI()))) {
+
+            ZipEntry entry = zipFile.getEntry("shakespeare_6.0.json");
+            fileContent = IOUtils.toString(zipFile.getInputStream(entry));
+            lines = fileContent.split("\n");
+            for (int i = 0; i < lines.length; i++) {
+                System.out.println(lines[i]);
+            }
+
+//            Enumeration<? extends ZipEntry> entries = zipFile.entries();
+//            while (entries.hasMoreElements()) {
+//                ZipEntry e = entries.nextElement();
+//                String json = IOUtils.toString(zipFile.getInputStream(e));
+//                System.out.println(e.getName());
+////                System.out.println(json);
+//                byte[] encoded = Base64.getEncoder().encode(json.getBytes());
+//                System.out.println();
+//                System.out.println(new String(encoded).substring(0, 100));
+//            }
+        }
+    }
+
+
+    @RequestMapping(value = "/getLine", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
+    public String readLine(@RequestParam(value = "line") final Integer line) {
         // TODO: return like lines[line], but take care of sync
-        return lineStr;
+        return lines[line];
     }
 
     /**
@@ -64,6 +77,13 @@ public class CustomController {
         // Decode message content
         // Get Message content and Parse into Lines with deliminator : "\n" ???
         // Find matches in every line and count them
+
+        String[] decodedLines = new String(Base64.getDecoder().decode(message.getContent())).split("\n");
+        for (String decodedLine : decodedLines) {
+            if (decodedLine.contains(message.getMatchTemplate())) {
+                foundMatches++;
+            }
+        }
 
         return String.valueOf(foundMatches);
     }

@@ -1,6 +1,5 @@
 package com.epam.executors;
 
-import com.epam.executors.model.Message;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
