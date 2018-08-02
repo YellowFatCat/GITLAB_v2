@@ -22,10 +22,13 @@ public class RaceConditionSReentrantReadWriteLock {
             try {
                 Util.threadSleep(1000);
                 return name;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             } finally {
                 System.out.println("Read is unlocked");
                 lock.readLock().unlock();
             }
+            return null;
         }
 
         public void setName(String name) {
@@ -34,6 +37,8 @@ public class RaceConditionSReentrantReadWriteLock {
             try {
                 Util.threadSleep(1000);
                 this.name = name;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             } finally {
                 System.out.println("Write is unlocked");
                 lock.writeLock().unlock();

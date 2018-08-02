@@ -9,7 +9,7 @@ import java.io.IOException;
 public class MyProcess {
 
 
-    public static void main( String[] args ) throws IOException {
+    public static void main( String[] args ) throws IOException, InterruptedException {
         Process process = new ProcessBuilder().command("notepad ").start();
         Util.threadSleep(3000);
         process.destroy();

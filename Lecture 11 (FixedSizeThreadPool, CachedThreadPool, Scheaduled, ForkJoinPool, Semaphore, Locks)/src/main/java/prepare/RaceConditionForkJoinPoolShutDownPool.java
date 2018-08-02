@@ -33,6 +33,16 @@ public class RaceConditionForkJoinPoolShutDownPool {
         );
 
 
+//        List<String> result = Arrays.asList("Name 1", "Name 2");
+//        result.parallelStream().forEach(
+//                (String s) ->
+//                {
+//                    System.out.println(s);
+//                }
+//        );
+//
+
+
         int result = service.invokeAny(callable); // returns the first task being completed
 
         // !!! If threads are started then we need to enforce it and shut it down

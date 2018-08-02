@@ -41,7 +41,7 @@ public class RaceConditionFixedThreadPool {
         }
 
         @Override
-        public java.lang.Integer call() {
+        public java.lang.Integer call() throws InterruptedException {
             Util.threadSleep(new Random().nextInt(10));
 
             // race condition
