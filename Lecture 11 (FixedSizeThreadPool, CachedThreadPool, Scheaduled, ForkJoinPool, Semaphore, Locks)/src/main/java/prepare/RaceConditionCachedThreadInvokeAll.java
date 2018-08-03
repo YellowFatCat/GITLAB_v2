@@ -57,6 +57,9 @@ public class RaceConditionCachedThreadInvokeAll {
         System.out.println("Counter = " + counter.count);
         System.out.println("The process is started and completed");
 
+
+//        Runtime.getRuntime().addShutdownHook();
+//
         putDown(service, 2);
     }
 
