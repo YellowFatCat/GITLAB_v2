@@ -2,6 +2,7 @@ package prepare;
 
 import prepare.util.Util;
 
+import java.util.Date;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -14,6 +15,9 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+/**
+ * Inefficient sequent read operation with ReentrackLock (2 reads should be performed independently right away with blocking each other)
+ */
 public class RaceConditionSReentrantLock {
 
 
@@ -25,7 +29,7 @@ public class RaceConditionSReentrantLock {
             lock.lock();
             System.out.println("Read is locked");
             try {
-                Util.threadSleep(1000);
+                Util.threadSleep(3000);
                 return name;
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -57,17 +61,18 @@ public class RaceConditionSReentrantLock {
         Cache cache = new Cache();
 
         service.submit(() -> {
-            cache.setName("Value 1000");
+            cache.setName("Value ### 3000 ### ");
         });
 
         Util.threadSleep(100);
 
+        // blocked 2 reads !!! Avoid it
         service.submit(() -> {
             final String name = cache.getName();
-            System.out.println("Got = " + name);
+            System.out.println("Got = " + name + " Time = " + new Date(System.currentTimeMillis()));
         });
         service.submit(() -> {
-            final String name = cache.getName();
+            final String name = cache.getName() + " Time = " + new Date((System.currentTimeMillis()));
             System.out.println("Got = " + name);
         });
 
@@ -76,8 +81,9 @@ public class RaceConditionSReentrantLock {
     }
 
     private static void putDown(ExecutorService service, int delay) throws InterruptedException {
+        service.shutdown();
         if (!service.awaitTermination(delay, TimeUnit.SECONDS)) {
-            service.shutdownNow();
+            service.shutdown();
         }
     }
 }

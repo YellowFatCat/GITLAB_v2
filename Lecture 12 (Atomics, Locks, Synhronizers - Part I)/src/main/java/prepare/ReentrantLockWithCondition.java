@@ -1,12 +1,13 @@
 package prepare;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Queue;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockWithCondition {
  
-    Stack<String> stack = new Stack<>();
+    Queue<String> fifoQueue = new ArrayDeque<>();
     int CAPACITY = 5;
  
     ReentrantLock lock = new ReentrantLock();
@@ -16,10 +17,10 @@ public class ReentrantLockWithCondition {
     public void pushToStack(String item) throws InterruptedException {
         lock.lock();
         try {
-            while(stack.size() == CAPACITY){
+            while(fifoQueue.size() == CAPACITY){
                 stackFullCondition.await();
             }
-            stack.push(item);
+            fifoQueue.offer(item);
             stackEmptyCondition.signalAll();
         } finally {
             lock.unlock();
@@ -29,10 +30,10 @@ public class ReentrantLockWithCondition {
     public String popFromStack() throws InterruptedException {
         lock.lock();
         try {
-            while(stack.size() == 0){
+            while(fifoQueue.size() == 0){
                 stackEmptyCondition.await();
             }
-            return stack.pop();
+            return fifoQueue.poll();
         } finally {
             stackFullCondition.signalAll();
             lock.unlock();

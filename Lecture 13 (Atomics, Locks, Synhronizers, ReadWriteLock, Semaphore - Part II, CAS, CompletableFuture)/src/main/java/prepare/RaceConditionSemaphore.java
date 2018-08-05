@@ -58,6 +58,8 @@ public class RaceConditionSemaphore {
     }
 
     private static void putDown(ExecutorService service, int delay) throws InterruptedException {
+//        Util.threadSleep(delay);
+        service.shutdown(); // reject new threads
         if (!service.awaitTermination(delay, TimeUnit.SECONDS)) {
             service.shutdownNow();
         }
