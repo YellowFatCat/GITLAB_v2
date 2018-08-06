@@ -7,13 +7,14 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.LongStream;
 
-public class RaceConditionAtomicInteger {
-
-
-    public static class Counter {
+/**
+ * workaround with intrisic lock
+ */
+public class AtomicInteger2 {
+    static class Counter {
         int counter = 0;
 
-        void inc() {
+        synchronized void inc() {
             counter++;
         }
     }
@@ -44,7 +45,7 @@ public class RaceConditionAtomicInteger {
                 }
         );
 
-        Util.threadSleep(1000);
+        Util.threadSleep(1100);
         // reject new tasks
         service.shutdown();
         // exit right after the tasks are completed

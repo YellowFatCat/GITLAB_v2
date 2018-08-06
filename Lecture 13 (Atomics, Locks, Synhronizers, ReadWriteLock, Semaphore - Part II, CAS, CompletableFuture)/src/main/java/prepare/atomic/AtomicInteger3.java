@@ -5,15 +5,25 @@ import prepare.util.Util;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.LongStream;
 
 
-public class RaceConditionFixIntrisicLockAtomicInteger {
+/**
+ * Right implementation with AtomicInteger
+ */
+public class AtomicInteger3 {
     static class Counter {
-        int counter = 0;
+        AtomicInteger counter = new AtomicInteger(0);
 
-        synchronized void inc() {
-            counter++;
+
+        synchronized void inc()
+        {
+            counter.incrementAndGet();
+        }
+
+        int get() {
+            return counter.get();
         }
     }
 
@@ -49,8 +59,8 @@ public class RaceConditionFixIntrisicLockAtomicInteger {
         // exit right after the tasks are completed
         service.awaitTermination(60, TimeUnit.SECONDS);
 
-        if (counter.counter != 2 * COUNTER)
-            System.err.println("Race Condition occured! Expected = " + (2 * COUNTER) + " Received = " + counter.counter);
+        if (counter.get() != 2 * COUNTER)
+            System.err.println("Race Condition occured! Expected = " + (2 * COUNTER) + " Received = " + counter.counter.get());
         System.out.println("Counter = " + counter.counter);
     }
 }

@@ -1,5 +1,4 @@
-package com.epam.LABSpringBoot.prepare.queues;
-
+package prepare.queues;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

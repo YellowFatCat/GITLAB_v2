@@ -1,6 +1,6 @@
-package com.epam.LABSpringBoot.prepare.queues;
+package prepare.queues;
 
-import com.epam.LABSpringBoot.prepare.utils.Utils;
+import prepare.util.Utils;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
@@ -16,13 +16,13 @@ public class Waiter implements Runnable {
     @Override
     public void run() {
         while(true) {
-            System.out.println("start waiting");
+            System.out.println("Waiter: start waiting");
             try {
-                String dish = window.take();
+                String dish = window.take(); // blocking call {@link http://tutorials.jenkov.com/java-util-concurrent/blockingqueue.html}
             } catch(InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("serving");
+            System.out.println("Waiter: serving");
             Utils.sleep(1000 + new Random().nextInt(2000));
         }
     }

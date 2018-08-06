@@ -5,22 +5,19 @@ import prepare.util.Util;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.LongStream;
 
+/**
+ * Race condition demo
+ */
+public class AtomicInteger1 {
 
-public class RaceConditionFixWithBasicAtomicInteger {
-    static class Counter {
-        AtomicInteger counter = new AtomicInteger(0);
 
+    public static class Counter {
+        int counter = 0;
 
-        synchronized void inc()
-        {
-            counter.incrementAndGet();
-        }
-
-        int get() {
-            return counter.get();
+        void inc() {
+            counter++;
         }
     }
 
@@ -50,14 +47,14 @@ public class RaceConditionFixWithBasicAtomicInteger {
                 }
         );
 
-        Util.threadSleep(1100);
+        Util.threadSleep(1000);
         // reject new tasks
         service.shutdown();
         // exit right after the tasks are completed
         service.awaitTermination(60, TimeUnit.SECONDS);
 
-        if (counter.get() != 2 * COUNTER)
-            System.err.println("Race Condition occured! Expected = " + (2 * COUNTER) + " Received = " + counter.counter.get());
+        if (counter.counter != 2 * COUNTER)
+            System.err.println("Race Condition occured! Expected = " + (2 * COUNTER) + " Received = " + counter.counter);
         System.out.println("Counter = " + counter.counter);
     }
 }

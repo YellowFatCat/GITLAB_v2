@@ -10,6 +10,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.IntStream;
 
+/**
+ * Example: http://tutorials.jenkov.com/java-util-concurrent/semaphore.html
+ */
 public class RaceConditionSemaphore {
 
 

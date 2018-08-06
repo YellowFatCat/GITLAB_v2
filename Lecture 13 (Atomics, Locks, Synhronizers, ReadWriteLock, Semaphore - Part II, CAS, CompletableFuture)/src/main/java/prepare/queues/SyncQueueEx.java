@@ -1,16 +1,19 @@
-package com.epam.LABSpringBoot.prepare.queues;
+package prepare.queues;
 
-
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.SynchronousQueue;
 
+/**
+ * http://tutorials.jenkov.com/java-util-concurrent/blockingqueue.html
+ * SyncQueueSize is always = 0 !!!
+ */
 public class SyncQueueEx {
 
 
     public static void main(String... args) {
-        SynchronousQueue<String> windows = new SynchronousQueue<>();
+        BlockingQueue<String> windows = new SynchronousQueue<>();
         Cook cook = new Cook(windows);
         Waiter waiter = new Waiter(windows);
 
@@ -18,6 +21,8 @@ public class SyncQueueEx {
 
         service.execute(cook);
         service.execute(waiter);
-        service.execute(waiter);
+//        service.execute(waiter);
+
+        service.shutdown();
     }
 }

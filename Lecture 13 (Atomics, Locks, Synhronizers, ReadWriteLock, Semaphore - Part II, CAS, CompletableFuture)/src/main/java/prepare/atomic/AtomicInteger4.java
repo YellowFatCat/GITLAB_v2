@@ -13,9 +13,11 @@ import java.util.stream.LongStream;
 
 
 /**
- * CAS Algorithm to increment with any value
+ * CAS Algorithm to increment with any value (demo)
+ * CAS in implemented internally in concurrent library - no need to design a new algorithm
+ * Test CAS reproduction
  */
-public class RaceConditionIncrementAnyAtomicInteger {
+public class AtomicInteger4 {
     static class Counter {
         AtomicLong counter = new AtomicLong(0);
 
