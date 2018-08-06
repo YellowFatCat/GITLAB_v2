@@ -9,23 +9,23 @@ public class CountDownLatchExample {
 
     public static class WorkThread implements Runnable {
         final CountDownLatch startLatch;
-        final CountDownLatch executeLatch;
+//        final CountDownLatch executeLatch;
 
-        public WorkThread(CountDownLatch startLatch, CountDownLatch executeLatch) {
+        public WorkThread(CountDownLatch startLatch/*, CountDownLatch executeLatch*/) {
             this.startLatch = startLatch;
-            this.executeLatch = executeLatch;
+//            this.executeLatch = executeLatch;
         }
 
         @Override
         public void run() {
 //            System.out.println("Thread : " + Thread.currentThread().getName());
-            try {
-                executeLatch.await();
+//            try {
+//                executeLatch.await();
                 executeJob();
                 startLatch.countDown();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
         }
 
         private void executeJob(){
@@ -41,14 +41,14 @@ public class CountDownLatchExample {
 
     public static void main(String[] args) throws InterruptedException {
         final CountDownLatch startLatch = new CountDownLatch(5);
-        final CountDownLatch executeLatch = new CountDownLatch(1);
+//        final CountDownLatch executeLatch = new CountDownLatch(1);
 
         IntStream.range(0, 5).forEach((i) -> {
-                    new Thread(new WorkThread(startLatch, executeLatch)).start();
+                    new Thread(new WorkThread(startLatch/*, executeLatch*/)).start();
                 }
         );
 
-        executeLatch.countDown(); // start all thread
+//        executeLatch.countDown(); // start all thread
         startLatch.await();// wait all thread being completed
         System.out.println("All threads executed. Continue execution.");
     }

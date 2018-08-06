@@ -1,5 +1,6 @@
 package prepare.queues;
 
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -8,7 +9,7 @@ public class BlockingQueueEx {
 
 
     public static void main(String... args) {
-        LinkedBlockingQueue<String> windows = new LinkedBlockingQueue<>();
+        BlockingQueue<String> windows = new LinkedBlockingQueue<>(5);
         Cook cook = new Cook(windows);
         Waiter waiter = new Waiter(windows);
 
@@ -16,6 +17,6 @@ public class BlockingQueueEx {
 
         service.execute(cook);
         service.execute(waiter);
-        service.execute(waiter);
+//        service.execute(waiter);
     }
 }

@@ -30,7 +30,7 @@ public class RaceConditionSemaphore {
                 permit = semaphore.tryAcquire(1, TimeUnit.SECONDS);
                 if (permit) {
                     System.out.println("Connection established to " + uri);
-                    Util.threadSleep(1500); // 500
+                    Util.threadSleep(500); // 500
                 } else {
                     System.out.println("Connection rejected");
                 }

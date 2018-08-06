@@ -17,7 +17,7 @@ public class AtomicInteger3 {
         AtomicInteger counter = new AtomicInteger(0);
 
 
-        synchronized void inc()
+        void inc()
         {
             counter.incrementAndGet();
         }

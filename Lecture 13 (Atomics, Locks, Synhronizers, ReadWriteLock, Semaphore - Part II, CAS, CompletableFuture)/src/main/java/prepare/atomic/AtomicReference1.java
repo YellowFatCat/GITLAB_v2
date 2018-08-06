@@ -10,7 +10,6 @@ public class AtomicReference1 {
         final String strBefore = "Before changes";
         final String afterChanges = "After Changes";
 
-
         reference.compareAndSet(null, strBefore);
         reference.compareAndSet(null, strBefore);
 
