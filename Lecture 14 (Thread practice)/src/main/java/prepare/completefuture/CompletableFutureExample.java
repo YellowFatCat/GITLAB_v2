@@ -12,7 +12,7 @@ public class CompletableFutureExample {
         ).thenApplyAsync((result) -> {
             return result + " Task 2 is completed \n";
         }).thenApplyAsync((result1) -> {
-                    System.out.println("Result is printed: \n" + result1);
+//                    System.out.println("Result is printed: \n" + result1);
                     return result1;
                 });
 
