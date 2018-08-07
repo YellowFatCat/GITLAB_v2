@@ -1,7 +1,6 @@
-package practice.com;
+package com;
 
 import org.junit.Test;
-import org.omg.PortableServer.THREAD_POLICY_ID;
 
 import static org.junit.Assert.assertEquals;
 

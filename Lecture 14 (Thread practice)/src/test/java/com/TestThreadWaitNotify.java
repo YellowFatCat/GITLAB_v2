@@ -1,4 +1,4 @@
-package practice.com;
+package com;
 
 import org.junit.Test;
 
