@@ -12,6 +12,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
+import java.util.zip.ZipFile;
 
 
 /**
@@ -22,14 +23,8 @@ import java.util.concurrent.*;
  * Task:
  * - Add Controller to provide service for shakespear.json.zip processing
  * - Add Job 1
- * -- Request with GET to server to download unzipped shakespear.json.zip from Server line by line in multiple threads
+ * -- Request with GET to server to download unzipped shakespear.json from Server line by line in multiple threads
  * -- Collect lines and concatenate to receive json
- * - Add Job 2
- * -- Add a task to encode json in BASE64 format and send to the server (put encoded content to {@link com.epam.executors.model.Message} as a content)
- * -- Add matching search expression to find into {@link com.epam.executors.model.Message}
- * -- Server should accept it, decode and return occurences
- * - Add Job 3
- * -- When All Tasks are completed then Client should go down and report it in Console found lines number (integer)
  */
 
 @RunWith(SpringRunner.class)
