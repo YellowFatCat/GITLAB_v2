@@ -1,9 +1,7 @@
 package com;
 
-import javafx.scene.chart.ValueAxis;
 import org.junit.Test;
 
-import javax.jnlp.PersistenceService;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +10,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by Admin on 8/6/2018.
+ * TODO: Convert to Lambda
  */
 public class Lambda2 {
 
@@ -79,7 +77,7 @@ public class Lambda2 {
         // Filter all MALES
 
         for (Person p : list) { // replace with lambda and stream().forEach()
-            // make Java 8 filter
+            // TODO: make Java 8 filter
             if (p.gender == Person.Gender.MALE) { // replace with '::' access method from the Person instance
                 males.add(p);
             }
@@ -94,7 +92,7 @@ public class Lambda2 {
         males.clear();
 
         for (Person p : list) { // replace with lambda and stream().forEach()
-            // make Java 8 filter and (p) -> {} statement inside
+            // TODO: make Java 8 filter and (p) -> {} statement inside
             if (p.gender == Person.Gender.MALE && p.age > 10) { // replace with '::' access
                 males.add(p);
             }
@@ -110,9 +108,9 @@ public class Lambda2 {
         List<Person> peopleWithSalary = new ArrayList<>();
 
 
-        // make one : Integer result = people.stream()....filter()....map()....sum();
+        // TODO: make one : Integer result = people.stream()....filter()....map()....sum();
         for (Person p : list) { // replace with lambda and stream().forEach()
-            // make Java 8 filter and (p) -> {} statement inside
+            // TODO: make Java 8 filter and (p) -> {} statement inside
             if ((p.gender == Person.Gender.MALE && p.age > 10) || (p.gender == Person.Gender.FEMALE)) { // replace with '::' access
                 peopleWithSalary.add(p);
             }
@@ -130,11 +128,11 @@ public class Lambda2 {
         // ###############################
         // ########## TASK 4 #############
         // ###############################
-        // Apply StringBuilder and access to static method  in a stream expression
+        // TODO: Apply StringBuilder and access to static method  in a stream expression
 
         StringBuilder sb = new StringBuilder();
         for (Person p : list) {
-          // make the statement
+          // TODO: make the statement
           //  (p) -> {
           //      sb.append(getName); // with ::
           // }
