@@ -1,4 +1,4 @@
 #!/bin/bash
 set -ev
-cd ../Lecture\ 4\ \(Threads\,\ Critical\ Sections\)/
+cd "../Lecture_4_Threads_1"
 mvn test
