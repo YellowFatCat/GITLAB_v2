@@ -1,10 +1,13 @@
 #!/bin/bash
-
+language: bash
 set -ev
+
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   script:
-  ./scripts/run-tests.sh
+    ./scripts/run-tests.sh
 fi
+
+
 
 #cache:
 #  directories:
