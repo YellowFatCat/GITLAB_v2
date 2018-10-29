@@ -1,0 +1,6 @@
+#!/bin/bash
+language java
+set -ev
+if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
+  script: ./scripts/run-tests.sh
+fi

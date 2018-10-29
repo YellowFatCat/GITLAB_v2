@@ -1,7 +1,5 @@
 package prepare;
 
-import com.sun.org.glassfish.gmbal.ManagedOperation;
-
 import java.util.stream.IntStream;
 
 /**
@@ -224,9 +222,5 @@ public class App {
         });
     }
 
-    @ManagedOperation
-    public static void managedOperation() {
-        System.out.println("Operation is executed");
-    }
 
 }
