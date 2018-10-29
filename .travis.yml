@@ -2,8 +2,6 @@ language: bash
 
 before_script: "set -ev"
 script: "./scripts/run-tests.sh"
-
-
 #cache:
 #  directories:
 #  - $HOME/.m2
