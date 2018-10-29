@@ -1,8 +1,10 @@
-language: bash
+language: java
 
 
 before_install:
   - chmod +x ./scripts/run-tests.sh
+
+install: /bin/true
 
 before_script: "set -ev"
 
