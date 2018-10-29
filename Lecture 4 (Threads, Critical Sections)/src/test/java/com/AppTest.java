@@ -16,11 +16,18 @@ public class AppTest {
     }
 
     @Test
-    public void testThread() {
+    public void testThread() throws InterruptedException {
 
         MyRunnable myRunnable = new MyRunnable();
 
         //
+        Thread thread1 = createThread(myRunnable);
+        Thread thread2 = createThread(myRunnable);
+        thread1.start();
+        thread2.start();
+
+        thread1.join();
+        thread2.join();
 
         assertEquals(2, myRunnable.counter);
     }
