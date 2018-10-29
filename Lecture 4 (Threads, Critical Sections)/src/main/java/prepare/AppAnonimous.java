@@ -4,7 +4,7 @@ package prepare;
  * Pass Interface to start a new thread
  * extends Thread
  * thread.run()
- * When Deadlock is completed (all threads are finished) (mention busy ports in Daemon threads
+ * When Deadlock is completed (all threads are finished) (mention busy ports in Daemon threads)
  *
  */
 public class AppAnonimous
