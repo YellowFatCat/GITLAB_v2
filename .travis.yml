@@ -1,4 +1,3 @@
-#!/bin/bash
 language: bash
 set -ev
 
