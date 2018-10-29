@@ -1,11 +1,7 @@
 language: bash
-set -ev
 
-if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
-  script:
-    ./scripts/run-tests.sh
-fi
-
+before_script: "set -ev"
+script: "./scripts/run-tests.sh"
 
 
 #cache:
