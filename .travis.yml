@@ -1,6 +1,11 @@
 language: bash
 
+
+before_install:
+  - chmod +x ./scripts/run-tests.sh
+
 before_script: "set -ev"
+
 script: "./scripts/run-tests.sh"
 #cache:
 #  directories:
