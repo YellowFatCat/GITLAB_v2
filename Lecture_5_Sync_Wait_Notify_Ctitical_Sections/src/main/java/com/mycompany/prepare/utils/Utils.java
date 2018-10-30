@@ -1,4 +1,4 @@
-package com.epam.LABSpringBoot.prepare.utils;
+package com.mycompany.prepare.utils;
 
 public class Utils {
     public static void sleep(final int time) {

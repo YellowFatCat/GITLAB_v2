@@ -6,7 +6,7 @@ import prepare.util.Util;
  * How to Stop Thread (add boolean flag), interrupt
  * Priority
  */
-public class AppRestTemplate {
+public class Interrupt {
 
     static class MyThread extends Thread {
         @Override

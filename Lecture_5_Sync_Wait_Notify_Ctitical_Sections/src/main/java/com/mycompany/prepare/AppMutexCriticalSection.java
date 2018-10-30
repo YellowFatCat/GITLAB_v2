@@ -1,6 +1,7 @@
-package com.epam.LABSpringBoot.prepare;
+package com.mycompany.prepare;
 
-import com.epam.LABSpringBoot.prepare.utils.Utils;
+
+import com.mycompany.prepare.utils.Utils;
 
 // Mutex, ctitical section in the static method
 public class AppMutexCriticalSection {

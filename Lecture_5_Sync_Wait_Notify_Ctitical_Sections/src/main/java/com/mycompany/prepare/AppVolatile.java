@@ -1,9 +1,8 @@
-package com.epam.LABSpringBoot.prepare;
+package com.mycompany.prepare;
 
-import com.epam.LABSpringBoot.prepare.utils.Utils;
+import com.mycompany.prepare.utils.Utils;
 
-// volatile
-// interrupted thread
+// Reads and writes are atomic for primitive types (except for long and double) and atomic for volatile
 public class AppVolatile {
 
 //    private static boolean running = true;

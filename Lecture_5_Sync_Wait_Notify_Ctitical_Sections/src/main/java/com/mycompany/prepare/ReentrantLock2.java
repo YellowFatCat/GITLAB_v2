@@ -1,8 +1,10 @@
-package com.epam.LABSpringBoot.prepare;
+package com.mycompany.prepare;
 
+
+import java.util.concurrent.locks.ReentrantLock;
 
 // Visual VM Thread Dead Lock, Thread Dump
-public class DeadLock {
+public class ReentrantLock2 {
 
     static class MyCounter {
 
@@ -35,6 +37,28 @@ public class DeadLock {
     }
 
     public static void main(String... args) {
+//        int counter = 0;
+//        Object object = new Object();
+//
+//        synchronized (object) {
+//            counter = 1;
+//            method();
+//        }
+//
+        ReentrantLock lock = new ReentrantLock();
+
+
+
+        lock.lock();
+        try{
+//            counter = 1;
+            method();
+        } finally {
+            lock.unlock();
+        }
+
+
+
         MyCounter counter = new MyCounter();
 
         new Thread(() -> {
@@ -54,5 +78,9 @@ public class DeadLock {
         }).start();
 
         System.out.println("Exit");
+    }
+
+    private static void method() {
+        throw new RuntimeException();
     }
 }

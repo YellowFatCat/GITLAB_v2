@@ -1,6 +1,6 @@
-package com.epam.LABSpringBoot.prepare;
+package com.mycompany.prepare;
 
-import com.epam.LABSpringBoot.prepare.utils.Utils;
+import com.mycompany.prepare.utils.Utils;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;

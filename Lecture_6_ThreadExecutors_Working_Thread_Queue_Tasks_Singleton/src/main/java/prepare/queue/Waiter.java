@@ -1,9 +1,8 @@
-package com.epam.LABSpringBoot.queue;
+package com.mycompany.queue;
 
-import com.epam.LABSpringBoot.prepare.utils.Utils;
+import com.mycompany.prepare.utils.Utils;
 
 import java.util.Random;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
 
 public class Waiter implements Runnable {

@@ -1,4 +1,4 @@
-package com.epam.LABSpringBoot.prepare;
+package com.mycompany.prepare;
 
 
 // Lazy initialization, Spring beans are singletons by default
