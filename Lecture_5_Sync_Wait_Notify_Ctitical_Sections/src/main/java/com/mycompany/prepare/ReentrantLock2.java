@@ -1,65 +1,51 @@
 package com.mycompany.prepare;
 
+import com.mycompany.prepare.utils.Utils;
 
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-// Visual VM Thread Dead Lock, Thread Dump
+// Reentrant Lock replacement for synchronized in heavy operations
+// Release of lock and advantages.
+// liveness
 public class ReentrantLock2 {
 
-    static class MyCounter {
+    // how to make it thread safe - thread independent
+    static class Counter {
+        // intrisic lock
+//        private final Object object = new Object();
+        private int counter = 0;
 
-        private Object o1 = new Object();
-        private Object o2 = new Object();
+//
+//        public void inc() {
+//            synchronized (object) {
+//                counter++;
+//            }
+//        }
 
-        int counter = 0;
+
+        // External lock
+        Lock lock = new ReentrantLock();
 
         public void inc() throws InterruptedException {
-            synchronized (o1) {
-                o1.wait(100);
-                synchronized (o2) {
-                    o2.wait(100);
-
-                    counter ++;
-                }
-            }
-        }
-
-        public void dec() throws InterruptedException {
-            synchronized (o2) {
-                o2.wait(100);
-                synchronized (o1) {
-                    o1.wait(100);
-
-                    counter --;
+            System.out.println(Thread.currentThread().getName() + " attempt acquire lock");
+            if(lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
+                System.out.println(Thread.currentThread().getName() + " acquired lock");
+                try {
+                    Utils.sleep(1000000); // liveness -> use tryLock() for heavy operations (while (true) to avoid starvation
+                    counter++;
+                } finally {
+                    System.out.println(Thread.currentThread().getName() + " release lock");
+                    lock.unlock();
                 }
             }
         }
     }
 
-    public static void main(String... args) {
-//        int counter = 0;
-//        Object object = new Object();
-//
-//        synchronized (object) {
-//            counter = 1;
-//            method();
-//        }
-//
-        ReentrantLock lock = new ReentrantLock();
+    public static void main(String ... args) {
 
-
-
-        lock.lock();
-        try{
-//            counter = 1;
-            method();
-        } finally {
-            lock.unlock();
-        }
-
-
-
-        MyCounter counter = new MyCounter();
+        Counter counter = new Counter();
 
         new Thread(() -> {
             try {
@@ -67,20 +53,19 @@ public class ReentrantLock2 {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();
+        }, "Thread 1").start();
 
         new Thread(() -> {
             try {
-                counter.dec();
+                counter.inc();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();
+        }, "Thread 2").start();
 
-        System.out.println("Exit");
-    }
+        Utils.sleep(2200);
 
-    private static void method() {
-        throw new RuntimeException();
+        System.out.println(Thread.currentThread().getName() + " counter = " + counter.counter);
+        System.out.println(Thread.currentThread().getName() + " exited");
     }
 }

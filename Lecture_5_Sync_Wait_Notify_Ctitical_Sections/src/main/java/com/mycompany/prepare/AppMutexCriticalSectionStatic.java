@@ -4,7 +4,7 @@ import com.mycompany.prepare.utils.Utils;
 
 // Mutex, ctitical section in the static method, acquire lock in the same thread (Mutex knows who locked it)
 // Intrinsic lock is associated with the Class instance (static context)
-// Extrinsic lock is associated with a particular object (not the Class instance)
+// Extrinsic lock is associated with a particular dynamic object (not the Class instance)
 public class AppMutexCriticalSectionStatic {
 
     private static int counter = 0;

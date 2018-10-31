@@ -1,55 +1,53 @@
 package com.mycompany.prepare;
 
-import com.mycompany.prepare.utils.Utils;
-
 // Reads and writes are atomic for primitive types (except for long and double) and atomic for volatile
+// If the shared object 'running' is not declared as volatle then it is not guaranteed to be propogated and updated between threadS memory context
 public class AppVolatile {
 
-//    private static boolean running = true;
-    private static volatile boolean running = true;
+    private static boolean running = true;
+//    private static volatile boolean running = true;
 
-    public static class MyThread extends Thread {
+    public static class ListenerThread extends Thread {
         public void run() {
+            System.out.println("Listener Thread is started");
             long counter = 0;
             while (running) {
                 counter++;
             }
 
-            System.out.println("Counter = " + counter);
-            System.out.println(Thread.currentThread().getName() + " exited");
+            System.out.println("Listener Thread is interrupted");
         }
     }
 
-    public static class MyThreadInterrupted extends Thread {
+    public static class SignalThread extends Thread {
         public void run() {
             long counter = 0;
             while (!isInterrupted()) {
+                if (running) {
+                    running = false;
+                    System.out.println("running 'signal' is set " + running);
+                }
                 counter++;
             }
 
-            System.out.println("Counter interrupted = " + counter);
-            System.out.println(Thread.currentThread().getName() + " exited");
+            System.out.println("Signal Thread completed");
         }
     }
 
 
 
-    public static void main(String... args) {
-        MyThread myThread = new MyThread();
-//        MyThreadInterrupted myThreadInterrupted = new MyThreadInterrupted();
+    public static void main(String... args) throws InterruptedException {
+        ListenerThread myThread = new ListenerThread();
+        SignalThread signalThread = new SignalThread();
 
-        myThread.setName("FlagControlled Thread");
-//        myThreadInterrupted.setName("Interruptable Thread");
-
-//        myThreadInterrupted.start();
         myThread.start();
-        Utils.sleep(1000);
+        Thread.sleep(100);
 
-        running = false;
+        signalThread.start();
+        Thread.sleep(100);
 
-        Utils.sleep(1000);
-//        myThreadInterrupted.interrupt();
+        signalThread.interrupt();
 
-        System.out.println(Thread.currentThread().getName() + " exited");
+        System.out.println(Thread.currentThread().getName() + " Exited");
     }
 }
