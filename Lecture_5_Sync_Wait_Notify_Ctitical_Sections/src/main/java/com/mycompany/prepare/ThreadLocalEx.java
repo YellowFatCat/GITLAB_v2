@@ -33,8 +33,11 @@ public class ThreadLocalEx {
             });
             System.out.println("Thread : " + Thread.currentThread().getName() + "; Counter= " +ThreadLocalEx.CounterFactory.getCounter().count);
         }).start();
+
         new Thread(() -> {
-            IntStream.range(0, 1000).forEach((x) -> ThreadLocalEx.CounterFactory.getCounter().count++);
+            IntStream.range(0, 1000).forEach((x) -> {
+                ThreadLocalEx.CounterFactory.getCounter().count++;
+            });
             System.out.println("Thread : " + Thread.currentThread().getName() + "; Counter= " +ThreadLocalEx.CounterFactory.getCounter().count);
         }).start();
 

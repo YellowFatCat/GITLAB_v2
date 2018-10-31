@@ -9,7 +9,7 @@ public class LockReturnOnWaitSleep {
     // how to make it thread safe - thread independent
     static class Counter {
         // isolated Object
-        private static int counter = 0;
+        private int counter = 0;
 
         public synchronized void inc() throws InterruptedException {
             System.out.println(Thread.currentThread().getName() + " executed. Lock Acquired.");
@@ -26,18 +26,18 @@ public class LockReturnOnWaitSleep {
         }
 
 
-        public synchronized void incSleep() throws InterruptedException {
-            System.out.println(Thread.currentThread().getName() + " executed. Lock Acquired.");
+        public void incSleep() throws InterruptedException {
+            System.out.println(Thread.currentThread().getName() + " executed");
             Thread.sleep(1000);
             counter++;
-            System.out.println(Thread.currentThread().getName() + " executed. Lock Released.");
+            System.out.println(Thread.currentThread().getName() + " executed");
         }
 
-        public synchronized void decSleep() throws InterruptedException {
-            System.out.println(Thread.currentThread().getName() + " executed. Lock Acquired.");
-            wait(1000);
+        public void decSleep() throws InterruptedException {
+            System.out.println(Thread.currentThread().getName() + " executed");
+            Thread.sleep(1000);
             counter--;
-            System.out.println(Thread.currentThread().getName() + " executed. Lock Released.");
+            System.out.println(Thread.currentThread().getName() + " executed");
         }
     }
 

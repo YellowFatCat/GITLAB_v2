@@ -14,7 +14,7 @@ public class DoubleSyncEntry {
 
             synchronized (o1){
                 System.out.println(counter++);
-                if (counter == 100) {
+                if (counter == 100000) {
                     return;
                 }
                 inc();

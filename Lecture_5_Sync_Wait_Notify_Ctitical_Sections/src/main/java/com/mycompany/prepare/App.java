@@ -11,7 +11,7 @@ package com.mycompany.prepare;
  *
  * Lock interface (External Lock) - advantageous
  * Examples: ReentrantLock1,2 (liveness)
- *
+ * Queue
  *
  *
  * Dispute on Thread Safe objects: Immutable objects Mutability, defend from concurrent object access

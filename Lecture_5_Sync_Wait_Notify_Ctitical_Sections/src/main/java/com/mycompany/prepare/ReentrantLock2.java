@@ -33,7 +33,7 @@ public class ReentrantLock2 {
             if(lock.tryLock(1000, TimeUnit.MILLISECONDS)) {
                 System.out.println(Thread.currentThread().getName() + " acquired lock");
                 try {
-                    Utils.sleep(1000000); // liveness -> use tryLock() for heavy operations (while (true) to avoid starvation
+                    Utils.sleep(100); // liveness -> use tryLock() for heavy operations (while (true) to avoid starvation
                     counter++;
                 } finally {
                     System.out.println(Thread.currentThread().getName() + " release lock");
