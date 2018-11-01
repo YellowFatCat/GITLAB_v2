@@ -2,7 +2,7 @@ package prepare.util;
 
 public class Util {
 
-    public static void threadSleep(final int mil){
+    public static void sleep(final int mil){
         try {
             Thread.sleep(mil);
         } catch (InterruptedException e) {

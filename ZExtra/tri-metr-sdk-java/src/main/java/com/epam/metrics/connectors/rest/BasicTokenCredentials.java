@@ -8,9 +8,9 @@ public class BasicTokenCredentials implements ICredentials {
     private String apiAccessToken = null;
 
     /**
-     * Creates new basic HTTP credentials.
+     * Creates new legacy HTTP credentials.
      *
-     * @param token used for basic api access (tri-metr)
+     * @param token used for legacy api access (tri-metr)
      */
     public BasicTokenCredentials(String token) {
         this.apiAccessToken = token;

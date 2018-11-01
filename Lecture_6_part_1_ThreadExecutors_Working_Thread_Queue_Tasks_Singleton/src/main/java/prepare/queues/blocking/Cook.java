@@ -1,6 +1,6 @@
-package prepare.queues;
+package prepare.queues.blocking;
 
-import prepare.util.Utils;
+import prepare.util.Util;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
@@ -17,7 +17,7 @@ public class Cook implements Runnable {
     public void run() {
         while(true) {
             System.out.println("Cook: start cooking");
-            Utils.sleep(1000 + new Random().nextInt(1000));
+            Util.sleep(1000 + new Random().nextInt(1000));
             System.out.println("Cook: dish is ready, waiting for waiter");
 
             try {

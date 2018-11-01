@@ -40,7 +40,7 @@ public class CustomController {
             produces = MediaType.TEXT_PLAIN_VALUE)
     public String readLine( @RequestParam(value = "line") final Integer line) {
         String lineStr = "Italy";
-        // TODO: return like lines[line], but take care of sync
+        // TODO: return like lines[line], but take care of reentrantlock
         return lineStr;
     }
 

@@ -1,4 +1,4 @@
-package prepare;
+package prepare.queues.reentrantlock;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

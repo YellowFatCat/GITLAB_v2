@@ -1,4 +1,4 @@
-package prepare;
+package prepare.queues.reentrantlock;
 
 
 import prepare.util.Util;
@@ -79,7 +79,7 @@ public class BasicSyncQueueFIFOImpl {
             );
         });
 
-        Util.threadSleep(2000);
+        Util.sleep(2000);
         putDown(executorService);
     }
 

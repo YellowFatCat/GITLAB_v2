@@ -13,7 +13,7 @@ public class BasicCredentials implements ICredentials {
     private String password;
 
     /**
-     * Creates new basic HTTP credentials.
+     * Creates new legacy HTTP credentials.
      *
      * @param username
      * @param password

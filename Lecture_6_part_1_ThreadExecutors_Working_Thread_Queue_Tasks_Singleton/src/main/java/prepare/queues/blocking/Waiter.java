@@ -1,6 +1,6 @@
-package prepare.queues;
+package prepare.queues.blocking;
 
-import prepare.util.Utils;
+import prepare.util.Util;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
@@ -23,7 +23,7 @@ public class Waiter implements Runnable {
                 e.printStackTrace();
             }
             System.out.println("Waiter: serving");
-            Utils.sleep(1000 + new Random().nextInt(2000));
+            Util.sleep(1000 + new Random().nextInt(2000));
         }
     }
 }

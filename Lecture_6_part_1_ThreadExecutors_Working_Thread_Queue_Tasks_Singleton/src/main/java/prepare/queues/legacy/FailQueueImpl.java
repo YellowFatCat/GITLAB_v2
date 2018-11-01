@@ -1,13 +1,13 @@
-package com.mycompany.prepare;
+package prepare.queues.legacy;
 
 import java.util.stream.IntStream;
 
-public class SyncQueueImpl {
+public class FailQueueImpl {
 
-    public SyncQueueImpl() {
+    public FailQueueImpl() {
     }
 
-    private static class Queue {
+    public static class Queue {
 
         public Object[] object = new Object[10];
         public Object lock = new Object();
@@ -47,7 +47,7 @@ public class SyncQueueImpl {
 
 
     public static void main(String[] args) throws InterruptedException {
-        new SyncQueueImpl();
+        new FailQueueImpl();
 
         Queue queue = new Queue();
 
