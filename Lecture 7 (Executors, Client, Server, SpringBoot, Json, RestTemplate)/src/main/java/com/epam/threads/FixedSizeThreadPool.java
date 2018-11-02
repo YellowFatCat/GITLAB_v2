@@ -1,36 +1,35 @@
-package com;
+package com.epam.threads;
 
-import prepare.util.Util;
+import com.epam.threads.util.Util;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 public class FixedSizeThreadPool {
     FixedSizeThreadPool() {
     }
 
-
     public static Callable<String> callable() {
         return () -> {
-            Util.threadSleep(1000);
+            Util.sleep(1000);
             System.out.println("Callable is executed");
             return "Result";
         };
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ExecutorService service = Executors.newFixedThreadPool(2);
+        ExecutorService service = Executors.newFixedThreadPool(3);
 
         service.submit(callable());
         service.submit(callable());
         service.submit(callable());
         System.out.println("Exiting...");
 
-        shutdownWithDelay(service, 1);
+        // wait while all tasks are completed
+        shutdownWithDelay(service, 2);
     }
 
     private static void shutdownWithDelay(ExecutorService service, int timeout) {

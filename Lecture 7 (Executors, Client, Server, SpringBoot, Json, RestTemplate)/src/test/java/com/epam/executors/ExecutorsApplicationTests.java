@@ -1,6 +1,7 @@
 package com.epam.executors;
 
-import com.epam.executors.controllers.Figure;
+import com.epam.executors.controllers.Message;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,9 +13,12 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Collections;
 
-
+// ######################################
+// ### This is not a home task!!! Ignore it
+// ######################################
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Ignore
 public class ExecutorsApplicationTests {
 
     @Test
@@ -26,12 +30,12 @@ public class ExecutorsApplicationTests {
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
 //        ExecutorService executorService = Executors.newCachedThreadPool();
 
-        Figure figure = new Figure();
+        Message figure = new Message();
         figure.name = "My Name.";
         figure.size = 1;
-        HttpEntity<Figure> httpEntity = new HttpEntity<Figure>(figure);
+        HttpEntity<Message> httpEntity = new HttpEntity<Message>(figure);
 
-        ResponseEntity<Figure> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, Figure.class);
+        ResponseEntity<Message> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, Message.class);
 
         System.out.println("Response: body" + response.getBody());
         System.out.println("Response: " + response);

@@ -12,7 +12,7 @@ public class CustomController {
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public Figure custom(Figure figure) {
+    public Message custom(Message figure) {
         return figure;
     }
 

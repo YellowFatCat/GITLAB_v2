@@ -1,6 +1,6 @@
-package com;
+package com.epam.threads;
 
-import prepare.util.Util;
+import com.epam.threads.util.Util;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -13,10 +13,9 @@ public class CachedThreadPool {
     CachedThreadPool() {
     }
 
-
     public static Callable<String> callable(String name) {
         return () -> {
-            Util.threadSleep(1000);
+            Util.sleep(1000);
             System.out.println("Callable is executed");
             return "Result: " + name;
         };
