@@ -20,6 +20,7 @@ public class BasicSyncQueueFIFOImpl {
         int CAPACITY = 10;
 
         ReentrantLock lock = new ReentrantLock();
+
         Condition fifoEmpty = lock.newCondition();
         Condition fifoFull = lock.newCondition();
 
