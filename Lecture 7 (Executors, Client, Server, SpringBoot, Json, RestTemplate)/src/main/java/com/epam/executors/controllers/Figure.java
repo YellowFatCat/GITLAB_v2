@@ -20,4 +20,12 @@ public class Figure {
     public void setSize(Integer size) {
         this.size = size;
     }
+
+    @Override
+    public String toString() {
+        return "Figure{" +
+                "name='" + name + '\'' +
+                ", size=" + size +
+                '}';
+    }
 }

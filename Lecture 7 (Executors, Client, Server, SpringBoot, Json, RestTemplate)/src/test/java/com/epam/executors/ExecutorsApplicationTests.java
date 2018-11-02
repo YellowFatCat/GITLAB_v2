@@ -1,5 +1,6 @@
 package com.epam.executors;
 
+import com.epam.executors.controllers.Figure;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -10,9 +11,6 @@ import org.springframework.web.client.RestTemplate;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Collections;
-import java.util.concurrent.*;
-
-
 
 
 @RunWith(SpringRunner.class)
@@ -20,18 +18,22 @@ import java.util.concurrent.*;
 public class ExecutorsApplicationTests {
 
     @Test
-    public void callStr() throws URISyntaxException, InterruptedException {
+    public void callCustom() throws URISyntaxException, InterruptedException {
         RestTemplate restTemplate = new RestTemplate();
-        URI uri = new URI("http://localhost:8080/str");
+        URI uri = new URI("http://localhost:8080/custom");
 
         HttpHeaders headers = new HttpHeaders();
-        headers.setAccept(Collections.singletonList(MediaType.TEXT_PLAIN));
+        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
 //        ExecutorService executorService = Executors.newCachedThreadPool();
 
-        HttpEntity<String> httpEntity = new HttpEntity<String>("This is the test message");
+        Figure figure = new Figure();
+        figure.name = "My Name.";
+        figure.size = 1;
+        HttpEntity<Figure> httpEntity = new HttpEntity<Figure>(figure);
 
-        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, String.class);
+        ResponseEntity<Figure> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, Figure.class);
 
-        System.out.println("Response: " + response.getBody());
+        System.out.println("Response: body" + response.getBody());
+        System.out.println("Response: " + response);
     }
 }
