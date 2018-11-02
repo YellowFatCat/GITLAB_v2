@@ -17,8 +17,8 @@ public class CustomController {
     }
 
     @RequestMapping(value = "/str", method = RequestMethod.POST,
-            consumes = MediaType.APPLICATION_JSON_VALUE,
-            produces = MediaType.APPLICATION_JSON_VALUE
+            consumes = MediaType.TEXT_PLAIN_VALUE,
+            produces = MediaType.TEXT_PLAIN_VALUE
     )
     public String str(String str) {
         return str;

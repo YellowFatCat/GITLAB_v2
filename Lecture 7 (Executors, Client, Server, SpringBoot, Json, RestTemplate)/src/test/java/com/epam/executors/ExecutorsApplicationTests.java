@@ -19,22 +19,19 @@ import java.util.concurrent.*;
 @SpringBootTest
 public class ExecutorsApplicationTests {
 
-    private static final String MATCH_EXPR = "Hello";
-
     @Test
-    public void findMatchingLinesOccurences() throws URISyntaxException, InterruptedException {
+    public void callStr() throws URISyntaxException, InterruptedException {
         RestTemplate restTemplate = new RestTemplate();
-        URI uri = new URI("http://localhost:8080/app/str");
+        URI uri = new URI("http://localhost:8080/str");
 
         HttpHeaders headers = new HttpHeaders();
-        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        ExecutorService executorService = Executors.newCachedThreadPool();
-
+        headers.setAccept(Collections.singletonList(MediaType.TEXT_PLAIN));
+//        ExecutorService executorService = Executors.newCachedThreadPool();
 
         HttpEntity<String> httpEntity = new HttpEntity<String>("This is the test message");
 
-        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.GET, httpEntity, String.class);
+        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.POST, httpEntity, String.class);
 
-        System.out.println("Response: " + response);
+        System.out.println("Response: " + response.getBody());
     }
 }
