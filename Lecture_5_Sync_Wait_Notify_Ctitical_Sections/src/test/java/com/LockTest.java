@@ -1,6 +1,7 @@
 package com;
 
 import com.mycompany.prepare.utils.Utils;
+import jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode;
 import org.junit.Test;
 
 import java.util.stream.IntStream;
@@ -20,7 +21,7 @@ public class LockTest {
     private static final Object object = new Object();
 
     public static void changeX() {
-        synchronized (object) {
+        synchronized (LockTest.class) {
             counter++;
         }
     }
@@ -30,6 +31,7 @@ public class LockTest {
         new Thread(() -> {
             IntStream.range(0, 1000).forEach((x) -> change());
         }).start();
+
         new Thread(() -> {
             IntStream.range(0, 1000).forEach((x) -> changeX());
         }).start();
