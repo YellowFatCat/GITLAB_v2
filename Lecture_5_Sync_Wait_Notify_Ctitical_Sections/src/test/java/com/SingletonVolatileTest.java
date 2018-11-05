@@ -1,5 +1,6 @@
 package com;
 
+import com.mycompany.prepare.SingletonVolatile;
 import org.junit.Test;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -11,7 +12,7 @@ public class SingletonVolatileTest {
 
     private static class SingletonVolatile {
         private AtomicInteger counter = new AtomicInteger();
-        private static /*TODO: fix here*/ SingletonVolatile instance = null;
+        private static /*TODO: fix here*/volatile SingletonVolatile instance = null;
 
         private SingletonVolatile() {
         }
@@ -20,8 +21,11 @@ public class SingletonVolatileTest {
             counter.incrementAndGet();
         }
 
+
+
         public static SingletonVolatile getInstance() {
             //TODO: Fix it here
+            synchronized (com.mycompany.prepare.SingletonVolatile.class){
             if (instance == null) {
                 try {
                     Thread.sleep(100); // keep sleep()
@@ -30,8 +34,12 @@ public class SingletonVolatileTest {
                 }
                 instance = new SingletonVolatile();
             }
-            return instance;
+            return instance;}
         }
+
+
+
+
 
         public int getCounter() {
             return counter.get();
@@ -59,6 +67,8 @@ public class SingletonVolatileTest {
                     SingletonVolatile.getInstance().inc();
                 });
             }).start();
+
+
 
             Thread.sleep(500);
 
