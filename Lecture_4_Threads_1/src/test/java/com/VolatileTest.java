@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class VolatileTest extends Thread {
 
-    private static int MY_INT = 0;
+    private static volatile int MY_INT = 0;
     public static final int WAIT = 5;
 
     static class ChangeListener extends Thread {
