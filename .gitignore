@@ -2,7 +2,7 @@
 *.class
 
 #gradle
-.gradle
+
 !gradle/wrapper/gradle-wrapper.jar
 
 # Log file
@@ -19,7 +19,7 @@
 *target/
 *.iml
 *.idea
-*.gradle
+
 
 # Package Files #
 *.jar

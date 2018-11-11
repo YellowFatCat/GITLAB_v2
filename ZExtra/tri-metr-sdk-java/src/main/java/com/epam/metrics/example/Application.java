@@ -266,7 +266,7 @@ public class Application {
 
 
         //#############################//#############################
-        //#### Added the basic JIRA/METRICS functionality bellow s####
+        //#### Added the legacy JIRA/METRICS functionality bellow s####
         //#############################//#############################
 
         // TODO: Code bellow should be cleaned after implementation of console
