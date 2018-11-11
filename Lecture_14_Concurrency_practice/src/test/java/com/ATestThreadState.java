@@ -11,41 +11,53 @@ public class ATestThreadState {
 
     /**
      * Fill in the gaps and insert instructions to make code executable
+     *
      * @throws InterruptedException
      */
     @Test
     public void testThreadState() throws InterruptedException {
-        // TODO: change instantiation
-        Thread thread1 = null;
-        Thread thread2 = null;
 
-        assertEquals(thread1.getState(), Thread.State.NEW);
-        assertEquals(thread2.getState(), Thread.State.NEW);
+        Thread mainThread = Thread.currentThread();
 
+        Thread thread1 = createThread(() -> {
+            try {
+                mainThread.join(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
 
-        // TODO: fill the gap
-        // TODO: fill the gap
+        Thread thread2 = createThread(() -> {
+            try {
+                mainThread.join(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
 
-        assertEquals(thread1.getState(), Thread.State.RUNNABLE);
-        assertEquals(thread2.getState(), Thread.State.RUNNABLE);
+        // After creation
+        assertEquals(Thread.State.NEW, thread1.getState());
+        assertEquals(Thread.State.NEW, thread2.getState());
 
-        // Add delay if necessary
-        // TODO: fill the gap
+        thread1.start();
+        thread2.start();
 
-        // threads should run task to be put on hold
-        assertEquals(thread1.getState(), Thread.State.TIMED_WAITING);
-        assertEquals(thread2.getState(), Thread.State.TIMED_WAITING);
-        assertEquals(Thread.currentThread().getState(), Thread.State.RUNNABLE);
-    }
+        // After start
+        assertEquals(Thread.State.RUNNABLE, thread1.getState());
+        assertEquals(Thread.State.RUNNABLE, thread2.getState());
 
-    private Thread createThread() {
-        final Thread thread = new Thread();
-        return thread;
+        Thread.sleep(100);
+
+        // After join with timeout
+        assertEquals(Thread.State.TIMED_WAITING, thread1.getState());
+        assertEquals(Thread.State.TIMED_WAITING, thread2.getState());
+
+        // Main thread is still runnable
+        assertEquals(Thread.State.RUNNABLE, Thread.currentThread().getState());
     }
 
     private Thread createThread(Runnable runnable) {
-        final Thread thread = new Thread(runnable);
-        return thread;
+        return new Thread(runnable);
     }
 
 }
